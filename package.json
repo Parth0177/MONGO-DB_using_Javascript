@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "mongoose": "^8.16.0"
+  },
+  "name": "mongo-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parth0177/MONGO-DB_using_Javascript.git"
+  },
+  "keywords": [],
+  "author": "Parth",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Parth0177/MONGO-DB_using_Javascript/issues"
+  },
+  "homepage": "https://github.com/Parth0177/MONGO-DB_using_Javascript#readme"
+}
