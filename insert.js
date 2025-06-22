@@ -21,7 +21,17 @@ const User = mongoose.model('User' , userSchema);
 const user1 = new User({
   name:"Parth",
   email:"parth670@gmail.com",
-  age:22
+  age:22,
+})
+
+const user2 = new User({
+  name:"Tinku",
+  email:"Tinku69@gmail.com",
+  age:23,
 })
 
 user1.save();
+user2.save().then((res)=>{
+  console.log(res);
+  
+}).catch((err)=> console.log(err));
