@@ -14,12 +14,17 @@ const bookSchema= mongoose.Schema({
   title: {
     type:String,
     required: true,
+    maxLength:20,
   },
   author:{
     type:String,
   },
   price:{
     type:Number,
+  },
+  discount:{
+    type:Number,
+    default: 0,
   },
 });
 
@@ -58,7 +63,12 @@ let book3 = new book({
   price:4800,
 });
 
-book3.save().then((res)=>{
+let book4 = new book({
+  title:"Gone Girl ",
+  author:"William Shakespear",
+  price:399,
+});
+
+book4.save().then((res)=>{
   console.log(res);
 }).catch((err)=> console.log(err))
-
