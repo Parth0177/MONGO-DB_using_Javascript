@@ -25,3 +25,12 @@ User.updateOne({name:"Sargam"}, {age:21}).then((res)=>{
 User.updateMany({age:{$gte:23}}, {age:20}).then((res)=>{
   console.log(res);
 }).catch((err)=> console.log(err));
+
+User.findOneAndUpdate({name:"Gungun"}, {age:40} , {new:true}).then((res)=>{
+  console.log(res);
+  
+}).catch((err)=> console.log(err));
+
+User.findByIdAndUpdate("6858530e2c01029c4bdca196", {age:23}, {new:true}).then((res)=>{
+  console.log(res);
+}).catch((err)=> console.log(err));
