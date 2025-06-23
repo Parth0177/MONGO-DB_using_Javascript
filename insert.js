@@ -45,7 +45,7 @@ User.insertMany([
   {name:"Sargam", email:"flat69@gmail.com", age:22},
   {name:"Gungun", email:"Nice69@gmail.com", age:23},
   {name:"Aryan", email:"big69@gmail.com", age:25},
-  {name:"Shivansh", email:"buns69@gmail.com", age:25},
+  {name:"Shivansh", email:"buns69@gmail.com", age:15},
 
 ]).then((res)=>{
   console.log(res);
