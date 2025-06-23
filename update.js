@@ -22,6 +22,6 @@ User.updateOne({name:"Sargam"}, {age:21}).then((res)=>{
   console.log(res);
 }).catch((err)=> console.log(err));
 
-User.updateMany({age:{$gt:23}}, {age:20}).then((res)=>{
+User.updateMany({age:{$gte:23}}, {age:20}).then((res)=>{
   console.log(res);
 }).catch((err)=> console.log(err));
