@@ -21,6 +21,7 @@ const bookSchema= mongoose.Schema({
   },
   price:{
     type:Number,
+    min:1,
   },
   discount:{
     type:Number,
@@ -55,7 +56,7 @@ let book2 = new book({
   console.log(res);
   
 }).catch((err)=> console.log(err)
-)*/
+)
 
 let book3 = new book({
   title:"Computer XII",
@@ -71,4 +72,10 @@ let book4 = new book({
 
 book4.save().then((res)=>{
   console.log(res);
-}).catch((err)=> console.log(err))
+}).catch((err)=> console.log(err));*/
+
+book.findByIdAndUpdate('6859ae61782aa21dd2729a89',{price:-500},{new:true}).then((res)=>{
+  console.log(res);
+  
+}).catch((err)=> console.log(err)
+)
